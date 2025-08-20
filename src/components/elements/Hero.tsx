@@ -9,7 +9,7 @@ export function Hero() {
     return (
         <>
             {!wallet ? <NotConnected /> : 
-            <div className="mt-12 sm:mt-30 flex flex-col sm:flex-row justify-center items-start gap-6 mx-auto">
+            <div className="mt-12 sm:mt-10 flex flex-col sm:flex-row justify-center items-start gap-6 mx-auto">
                 <div>
                     <JettonsBlock address={toUserFriendlyAddress(wallet.account.address)} />
                 </div>
